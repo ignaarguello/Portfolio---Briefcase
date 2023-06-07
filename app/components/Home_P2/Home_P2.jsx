@@ -22,13 +22,12 @@ export default function Home_P2() {
     { "nombre": 'MongoDB', "logo": <SiMongodb className='logo-skill' />, },
   ]
 
-
-
   return (
     <div id="container-general__Home__P2">
       <hr />
       <h2 id='titulo-habilidades__Home-P2'>Habilidades Técnicas:</h2>
       <div className='container-GeneralSkill__Home-P2'>
+        {/* Comienzo de contenedor FRONTEND */}
         {
           skillsFrontend.map(elem =>
             <div className='my-5'>
@@ -40,7 +39,7 @@ export default function Home_P2() {
             </div>
           )
         }
-        {/*  */}
+        {/* Comienzo de contenedor BACKEND */}
         {
           skillsBackend.map(elem =>
             <>
@@ -48,6 +47,7 @@ export default function Home_P2() {
               <div className='cont-eachSkill__Home-P2'>
                 <h2 className='nombre-skill'>{elem?.nombre?.toUpperCase()}</h2>
                 {elem?.logo}
+                <h2>Hola</h2>
               </div>
             </>
           )
